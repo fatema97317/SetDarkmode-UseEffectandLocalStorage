@@ -17,6 +17,8 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode))
+
+
   }, [darkMode])
 
 
@@ -24,7 +26,7 @@ const App = () => {
     <div className='toggle-container'>
 
       <h1>Click here to switch Dark Mode</h1>
-      
+
       <label className='switch'>
         <input
           type='checkbox'
@@ -33,7 +35,9 @@ const App = () => {
         />
 
         <span className='slider'></span>
+
       </label>
+      <span className='icon'>{darkMode ? "🌙" : "🌞"}</span>
 
     </div>
   )

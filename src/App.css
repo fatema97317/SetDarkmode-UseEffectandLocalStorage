@@ -3,6 +3,10 @@ body.dark {
     color: white;
 }
 
+body {
+    transition: background-color 0.9s ease-in-out, color 0.9s ease-in-out;
+}
+
 h1 {
     text-shadow: 1px 6px 9px rgb(153, 153, 153);
 }
@@ -60,4 +64,11 @@ input:checked+.slider {
 
 input:checked+.slider:before {
     transform: translateX(24px);
+}
+
+.icon {
+    position: absolute;
+    font-size: 29px;
+    top: 50%;
+    transform: translateY(-50%);
 }
